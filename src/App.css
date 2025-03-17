@@ -1,0 +1,18 @@
+/* src/App.css */
+.horizontal-container {
+  display: flex;
+  flex-direction: row;
+  width: 300vw;
+  /* 3 sections, each occupying 100vw */
+  height: 100vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+}
